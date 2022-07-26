@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            Text("Hey Sophia", style: TextStyle(
+            Text("Hey Chand", style: TextStyle(
               color: Colors.black,
               fontWeight: FontWeight.bold,
               fontSize: 18
