@@ -1,15 +1,7 @@
 # Travel App
 
+</br>
 
-<div class="row" style >
-  <div class="column">
-    <img src = "Screenshots/1.jpg" width = "250" height = "500">
-  </div>
-  <div class="column">
-    <img src = "Screenshots/2.jpg" width = "250" height = "500">
-  </div>
+<img src = "Screenshots/1.jpg" height = "500em"/> &nbsp; <img src = "Screenshots/2.jpg" height = "500em"/> &nbsp; <img src = "Screenshots/3.jpg" height = "500em"/>
  
-</div> 
-
-
 
