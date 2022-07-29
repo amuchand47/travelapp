@@ -4,12 +4,14 @@ import '../../models/Product.dart';
 import '../../public/constant.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// ignore: must_be_immutable
 class DetailsPage extends StatefulWidget {
 
   Product product;
-  DetailsPage(this.product);
+  DetailsPage(this.product, {Key? key}) : super(key: key);
   @override
   State<StatefulWidget> createState() {
+    // ignore: no_logic_in_create_state
     return DetailsPageState(product);
   }
 }
@@ -19,6 +21,7 @@ class DetailsPageState extends State<DetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         fit: StackFit.expand,
         children: [
@@ -121,6 +124,8 @@ class DetailsPageState extends State<DetailsPage> {
 /// FavoriteButton Icon
 ///
 class FavoriteButton extends StatefulWidget {
+  const FavoriteButton({Key? key}) : super(key: key);
+
   @override
   _FavoriteButtonState createState() => _FavoriteButtonState();
 }
@@ -134,10 +139,10 @@ class _FavoriteButtonState extends State<FavoriteButton> {
       child: Container(
         height: 57.6,
         width: 57.6,
-        padding: EdgeInsets.all(18),
+        padding: const EdgeInsets.all(18),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(9.6),
-          color: Color(0x10000000),
+          color: const Color(0x10000000),
         ),
         child: SvgPicture.asset(isFavorite
             ? 'assets/svg/icon_heart_fill_red.svg'

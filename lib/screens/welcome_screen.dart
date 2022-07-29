@@ -3,6 +3,8 @@ import 'package:travel_app/screens/home/homeScreen.dart';
 import '../public/constant.dart';
 
 class WelcomeScreen extends StatefulWidget {
+  const WelcomeScreen({Key? key}) : super(key: key);
+
   @override
   _WelcomeScreenState createState() => _WelcomeScreenState();
 }
@@ -43,7 +45,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                      ),
                      child: IconButton(
                        onPressed: (){
-                         Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+                         Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomeScreen()));
                        },
                        icon: const Icon(Icons.arrow_forward_ios, color: Colors.white,),
                      ),
